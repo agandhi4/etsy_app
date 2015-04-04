@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		516FA98C3C62689EBDB05787 /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542C631556F240B8DE95B6E1 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55BA29A717C796FE66668698 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */; };
+		A9D52B90E9AB23042B4B2644 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C8014F375A78209DBAC9D /* SwiftyJSON.swift */; };
+		BECEF273DF7E963FAE95E92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
+		C46FF6DB3C77B1212C6EB50B /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */; };
+		C84D61A3116BA60461ECC663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
+		D5F4AA45D253CD2BC47E80A9 /* Pods-etsy_app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6972555FF512A8CB5A89A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
+		EFA2C79435A911EDEC40E43C /* Pods-etsy_app-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */; };
+		FF8940BFE5DC1B538EEB0EBD /* Pods-etsy_app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58FFCC95FCBC22B5D9608C2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61EB0F70F6907D6EF95C336F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A34E5ED2EF748E3632AE934;
+			remoteInfo = "Pods-etsy_app-SwiftyJSON";
+		};
+		B3D430339DC2CD6353B33E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61EB0F70F6907D6EF95C336F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84CFAB5067642CD282E13ED3;
+			remoteInfo = "Pods-etsy_app-Alamofire";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		18F2FDEB1F2CDF1F488DB58C /* Pods-etsy_app-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.debug.xcconfig"; sourceTree = "<group>"; };
+		3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		364787777782CFDC99F042AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.release.xcconfig"; sourceTree = "<group>"; };
+		5267A480503CF9D9CEA9CA86 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5294FE4AA092CD7A9811524D /* Pods-etsy_app-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-Alamofire.modulemap"; sourceTree = "<group>"; };
+		533C8014F375A78209DBAC9D /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		752B4E4FEEDD585D995C3A2B /* Pods-etsy_app-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		77B6C6AFD42E2FFE9C4B061D /* Pods-etsy_app-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		79C694B55CE6ADA282F3B112 /* Pods-etsy_app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app.modulemap"; sourceTree = "<group>"; };
+		7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_etsy_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86029E450A3CEB11B1D26A0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879C33338CD399EB5404C1F8 /* Pods-etsy_app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-resources.sh"; sourceTree = "<group>"; };
+		87FA9FE21C6CABB997EFDCE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-umbrella.h"; sourceTree = "<group>"; };
+		A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1DEABAE4BF604AA4B26328 /* Pods-etsy_app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-etsy_app-acknowledgements.plist"; sourceTree = "<group>"; };
+		C573F15ACF050B4F5A0893F1 /* Pods-etsy_app-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		C93C3C7F922AE014F493C489 /* Pods-etsy_app-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		CA5A4E01AD19EAAAA23285BC /* Pods-etsy_app-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-environment.h"; sourceTree = "<group>"; };
+		CA5D7AA13C9345206AD0F5EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27735922A7C686EFBAE08AD /* Pods-etsy_app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-frameworks.sh"; sourceTree = "<group>"; };
+		D8EE440823739F8384703498 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88071C2BD108A83F0203531 /* Pods-etsy_app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-etsy_app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9AA9228BEA65C17D821834D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BECEF273DF7E963FAE95E92B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50C239F09A86C6AD4F8426E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6972555FF512A8CB5A89A66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1EC643AC26B96C2502838B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84D61A3116BA60461ECC663 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B7015EAABBE209FD6C87888 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86029E450A3CEB11B1D26A0D /* Info.plist */,
+				77B6C6AFD42E2FFE9C4B061D /* Pods-etsy_app-SwiftyJSON.modulemap */,
+				C93C3C7F922AE014F493C489 /* Pods-etsy_app-SwiftyJSON.xcconfig */,
+				3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */,
+				638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */,
+				C573F15ACF050B4F5A0893F1 /* Pods-etsy_app-SwiftyJSON-prefix.pch */,
+				9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-etsy_app-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		219201231A62D8A483F4B21F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E26E0ECFFFEA2EBFAE528F45 /* Pods-etsy_app */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2F6452B5D081634C6E72DFF2 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */,
+				6754320D648413A7F8C6078A /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		4260BB8B0481EFE738B7B905 = {
+			isa = PBXGroup;
+			children = (
+				5267A480503CF9D9CEA9CA86 /* Podfile */,
+				81D637C28ABCEBA34CAB0070 /* Frameworks */,
+				7EA0E919447257FF11AEBAEE /* Pods */,
+				B9A45423352C95FB45CF269B /* Products */,
+				219201231A62D8A483F4B21F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6356DE587975101481342128 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				533C8014F375A78209DBAC9D /* SwiftyJSON.swift */,
+				0B7015EAABBE209FD6C87888 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		6754320D648413A7F8C6078A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D7AA13C9345206AD0F5EB /* Info.plist */,
+				5294FE4AA092CD7A9811524D /* Pods-etsy_app-Alamofire.modulemap */,
+				752B4E4FEEDD585D995C3A2B /* Pods-etsy_app-Alamofire.xcconfig */,
+				759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */,
+				11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */,
+				18F2FDEB1F2CDF1F488DB58C /* Pods-etsy_app-Alamofire-prefix.pch */,
+				A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-etsy_app-Alamofire";
+			sourceTree = "<group>";
+		};
+		7EA0E919447257FF11AEBAEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F6452B5D081634C6E72DFF2 /* Alamofire */,
+				6356DE587975101481342128 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81D637C28ABCEBA34CAB0070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F437AC4E78FAC1E13D8E66E8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9A45423352C95FB45CF269B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */,
+				842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */,
+				D8EE440823739F8384703498 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26E0ECFFFEA2EBFAE528F45 /* Pods-etsy_app */ = {
+			isa = PBXGroup;
+			children = (
+				87FA9FE21C6CABB997EFDCE0 /* Info.plist */,
+				79C694B55CE6ADA282F3B112 /* Pods-etsy_app.modulemap */,
+				E88071C2BD108A83F0203531 /* Pods-etsy_app-acknowledgements.markdown */,
+				BD1DEABAE4BF604AA4B26328 /* Pods-etsy_app-acknowledgements.plist */,
+				F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */,
+				CA5A4E01AD19EAAAA23285BC /* Pods-etsy_app-environment.h */,
+				D27735922A7C686EFBAE08AD /* Pods-etsy_app-frameworks.sh */,
+				879C33338CD399EB5404C1F8 /* Pods-etsy_app-resources.sh */,
+				A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */,
+				252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */,
+				44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */,
+			);
+			name = "Pods-etsy_app";
+			path = "Target Support Files/Pods-etsy_app";
+			sourceTree = "<group>";
+		};
+		F437AC4E78FAC1E13D8E66E8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				364787777782CFDC99F042AA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A4A590B54F19067E4B34DF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F4AA45D253CD2BC47E80A9 /* Pods-etsy_app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1715801B02B65AF51B31C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542C631556F240B8DE95B6E1 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30D5084F55242263E497018 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516FA98C3C62689EBDB05787 /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D5E137C129321C7F027126 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */;
+			buildPhases = (
+				E476681C3C3A627E5117F0F0 /* Sources */,
+				A9AA9228BEA65C17D821834D /* Frameworks */,
+				F30D5084F55242263E497018 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-etsy_app-SwiftyJSON";
+			productName = "Pods-etsy_app-SwiftyJSON";
+			productReference = D8EE440823739F8384703498 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0710E958C3A0B54B109B6FBB /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */;
+			buildPhases = (
+				19C4A3FB1185F357EF98D793 /* Sources */,
+				E1EC643AC26B96C2502838B2 /* Frameworks */,
+				BE1715801B02B65AF51B31C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-etsy_app-Alamofire";
+			productName = "Pods-etsy_app-Alamofire";
+			productReference = B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E97BD4499CC0D79C45309326 /* Pods-etsy_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A1F76D40778110A20383EE /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */;
+			buildPhases = (
+				5A2142AD73BC3C2508CE0538 /* Sources */,
+				C50C239F09A86C6AD4F8426E /* Frameworks */,
+				2A4A590B54F19067E4B34DF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11CA27300258154185F2AD27 /* PBXTargetDependency */,
+				DD4DE6453365ADE49CF55A53 /* PBXTargetDependency */,
+			);
+			name = "Pods-etsy_app";
+			productName = "Pods-etsy_app";
+			productReference = 842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61EB0F70F6907D6EF95C336F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = BEC56AFE58E55CBB90BEE8CE /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4260BB8B0481EFE738B7B905;
+			productRefGroup = B9A45423352C95FB45CF269B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E97BD4499CC0D79C45309326 /* Pods-etsy_app */,
+				84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */,
+				3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C4A3FB1185F357EF98D793 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46FF6DB3C77B1212C6EB50B /* Alamofire.swift in Sources */,
+				EFA2C79435A911EDEC40E43C /* Pods-etsy_app-Alamofire-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A2142AD73BC3C2508CE0538 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8940BFE5DC1B538EEB0EBD /* Pods-etsy_app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E476681C3C3A627E5117F0F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BA29A717C796FE66668698 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */,
+				A9D52B90E9AB23042B4B2644 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11CA27300258154185F2AD27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-etsy_app-Alamofire";
+			target = 84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */;
+			targetProxy = B3D430339DC2CD6353B33E1C /* PBXContainerItemProxy */;
+		};
+		DD4DE6453365ADE49CF55A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-etsy_app-SwiftyJSON";
+			target = 3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */;
+			targetProxy = 58FFCC95FCBC22B5D9608C2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		003629AC2F2E1423E9C6F9D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		19429A424E9A4B01E86461E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		240AD0F3A976C129736BBDD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_etsy_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DB7B4C5657E7A53A6D99E88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		740DD6F9E89CFD8BA0DB11E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_etsy_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC7F6A689DB94CE31620A6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB802A876C646646DEBF9E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F7F20FC1317C4FA4C5C7171F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0710E958C3A0B54B109B6FBB /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB802A876C646646DEBF9E4E /* Debug */,
+				19429A424E9A4B01E86461E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A1F76D40778110A20383EE /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240AD0F3A976C129736BBDD6 /* Debug */,
+				740DD6F9E89CFD8BA0DB11E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D5E137C129321C7F027126 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				003629AC2F2E1423E9C6F9D1 /* Debug */,
+				5DB7B4C5657E7A53A6D99E88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC56AFE58E55CBB90BEE8CE /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F20FC1317C4FA4C5C7171F /* Debug */,
+				BC7F6A689DB94CE31620A6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61EB0F70F6907D6EF95C336F /* Project object */;
+}

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A46D2139905730DD5E9577C1 /* Pods_etsy_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD0F40753D1FA6BBFAA1B53 /* Pods_etsy_app.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F31A58871AD08C2E00C15048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A58861AD08C2E00C15048 /* AppDelegate.swift */; };
-		F31A58891AD08C2E00C15048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A58881AD08C2E00C15048 /* ViewController.swift */; };
 		F31A588C1AD08C2E00C15048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A588A1AD08C2E00C15048 /* Main.storyboard */; };
 		F31A588E1AD08C2E00C15048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31A588D1AD08C2E00C15048 /* Images.xcassets */; };
 		F31A58911AD08C2E00C15048 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31A588F1AD08C2E00C15048 /* LaunchScreen.xib */; };
 		F31A589D1AD08C2E00C15048 /* etsy_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A589C1AD08C2E00C15048 /* etsy_appTests.swift */; };
+		F3841DBD1AD098E800A49B6E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DBC1AD098E800A49B6E /* SearchViewController.swift */; };
+		F3841DBF1AD098FC00A49B6E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */; };
+		F3841DC11AD0990C00A49B6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DC01AD0990C00A49B6E /* DetailViewController.swift */; };
+		F3841DC51AD09A2D00A49B6E /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DC41AD09A2D00A49B6E /* SearchModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +30,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E645A7E9D1F9D98F1B391E0 /* Pods-etsy_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-etsy_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-etsy_app/Pods-etsy_app.debug.xcconfig"; sourceTree = "<group>"; };
+		2AD0F40753D1FA6BBFAA1B53 /* Pods_etsy_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_etsy_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92094A340B6EECD95A012EA /* Pods-etsy_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-etsy_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-etsy_app/Pods-etsy_app.release.xcconfig"; sourceTree = "<group>"; };
 		F31A58811AD08C2E00C15048 /* etsy_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etsy_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31A58851AD08C2E00C15048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31A58861AD08C2E00C15048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F31A58881AD08C2E00C15048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F31A588B1AD08C2E00C15048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F31A588D1AD08C2E00C15048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F31A58901AD08C2E00C15048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F31A58961AD08C2E00C15048 /* etsy_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etsy_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31A589B1AD08C2E00C15048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31A589C1AD08C2E00C15048 /* etsy_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etsy_appTests.swift; sourceTree = "<group>"; };
+		F3841DBC1AD098E800A49B6E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ViewControllers/SearchViewController.swift; sourceTree = "<group>"; };
+		F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ViewControllers/ResultsViewController.swift; sourceTree = "<group>"; };
+		F3841DC01AD0990C00A49B6E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ViewControllers/DetailViewController.swift; sourceTree = "<group>"; };
+		F3841DC41AD09A2D00A49B6E /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchModel.swift; path = Library/SearchModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46D2139905730DD5E9577C1 /* Pods_etsy_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +67,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4560F83E13D7C72867FDA286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E645A7E9D1F9D98F1B391E0 /* Pods-etsy_app.debug.xcconfig */,
+				E92094A340B6EECD95A012EA /* Pods-etsy_app.release.xcconfig */,
+			);
+			name = Pods;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6DC6A15B29DD27B6F46E135B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AD0F40753D1FA6BBFAA1B53 /* Pods_etsy_app.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		F31A58781AD08C2E00C15048 = {
 			isa = PBXGroup;
 			children = (
 				F31A58831AD08C2E00C15048 /* etsy_app */,
-				F31A58991AD08C2E00C15048 /* etsy_appTests */,
-				F31A58821AD08C2E00C15048 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,16 +100,15 @@
 				F31A58961AD08C2E00C15048 /* etsy_appTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		F31A58831AD08C2E00C15048 /* etsy_app */ = {
 			isa = PBXGroup;
 			children = (
-				F31A58861AD08C2E00C15048 /* AppDelegate.swift */,
-				F31A58881AD08C2E00C15048 /* ViewController.swift */,
-				F31A588A1AD08C2E00C15048 /* Main.storyboard */,
-				F31A588D1AD08C2E00C15048 /* Images.xcassets */,
-				F31A588F1AD08C2E00C15048 /* LaunchScreen.xib */,
+				F3841DBB1AD0985800A49B6E /* ViewControllers */,
+				F3841DC31AD09A1500A49B6E /* Library */,
+				F3841DC21AD099C200A49B6E /* Interface */,
 				F31A58841AD08C2E00C15048 /* Supporting Files */,
 			);
 			path = etsy_app;
@@ -90,7 +117,13 @@
 		F31A58841AD08C2E00C15048 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F31A58991AD08C2E00C15048 /* etsy_appTests */,
+				F31A58821AD08C2E00C15048 /* Products */,
+				4560F83E13D7C72867FDA286 /* Pods */,
+				6DC6A15B29DD27B6F46E135B /* Frameworks */,
+				F31A58861AD08C2E00C15048 /* AppDelegate.swift */,
 				F31A58851AD08C2E00C15048 /* Info.plist */,
+				F31A588D1AD08C2E00C15048 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -102,7 +135,7 @@
 				F31A589A1AD08C2E00C15048 /* Supporting Files */,
 			);
 			path = etsy_appTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		F31A589A1AD08C2E00C15048 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -112,6 +145,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F3841DB91AD0982D00A49B6E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F31A588F1AD08C2E00C15048 /* LaunchScreen.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		F3841DBA1AD0983700A49B6E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F31A588A1AD08C2E00C15048 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F3841DBB1AD0985800A49B6E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3841DBC1AD098E800A49B6E /* SearchViewController.swift */,
+				F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */,
+				F3841DC01AD0990C00A49B6E /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F3841DC21AD099C200A49B6E /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3841DBA1AD0983700A49B6E /* Storyboards */,
+				F3841DB91AD0982D00A49B6E /* XIBs */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		F3841DC31AD09A1500A49B6E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F3841DC41AD09A2D00A49B6E /* SearchModel.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F31A58A01AD08C2E00C15048 /* Build configuration list for PBXNativeTarget "etsy_app" */;
 			buildPhases = (
+				AED7826EEAEA2068921B57FF /* Check Pods Manifest.lock */,
 				F31A587D1AD08C2E00C15048 /* Sources */,
 				F31A587E1AD08C2E00C15048 /* Frameworks */,
 				F31A587F1AD08C2E00C15048 /* Resources */,
+				179C69F28DDF9F3740C83ABD /* Embed Pods Frameworks */,
+				7D2C397362F20B6B2AB82FB0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +286,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		179C69F28DDF9F3740C83ABD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-etsy_app/Pods-etsy_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2C397362F20B6B2AB82FB0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-etsy_app/Pods-etsy_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AED7826EEAEA2068921B57FF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F31A587D1AD08C2E00C15048 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31A58891AD08C2E00C15048 /* ViewController.swift in Sources */,
+				F3841DBD1AD098E800A49B6E /* SearchViewController.swift in Sources */,
 				F31A58871AD08C2E00C15048 /* AppDelegate.swift in Sources */,
+				F3841DBF1AD098FC00A49B6E /* ResultsViewController.swift in Sources */,
+				F3841DC51AD09A2D00A49B6E /* SearchModel.swift in Sources */,
+				F3841DC11AD0990C00A49B6E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +464,7 @@
 		};
 		F31A58A11AD08C2E00C15048 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E645A7E9D1F9D98F1B391E0 /* Pods-etsy_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = etsy_app/Info.plist;
@@ -344,6 +475,7 @@
 		};
 		F31A58A21AD08C2E00C15048 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E92094A340B6EECD95A012EA /* Pods-etsy_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = etsy_app/Info.plist;
@@ -405,6 +537,7 @@
 				F31A58A21AD08C2E00C15048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F31A58A31AD08C2E00C15048 /* Build configuration list for PBXNativeTarget "etsy_appTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +546,7 @@
 				F31A58A51AD08C2E00C15048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
