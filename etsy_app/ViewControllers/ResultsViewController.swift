@@ -35,11 +35,11 @@ extension ResultsViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return searchModel.numResults
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as ListCell
         return cell
     }
 }

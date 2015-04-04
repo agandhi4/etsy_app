@@ -17,6 +17,9 @@
 		F3841DBF1AD098FC00A49B6E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */; };
 		F3841DC11AD0990C00A49B6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DC01AD0990C00A49B6E /* DetailViewController.swift */; };
 		F3841DC51AD09A2D00A49B6E /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DC41AD09A2D00A49B6E /* SearchModel.swift */; };
+		F3841DC71AD0A0C800A49B6E /* EtsyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DC61AD0A0C800A49B6E /* EtsyService.swift */; };
+		F3841DCB1AD0A17C00A49B6E /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DCA1AD0A17C00A49B6E /* Listing.swift */; };
+		F3841DCE1AD0A1F800A49B6E /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3841DCD1AD0A1F800A49B6E /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ViewControllers/ResultsViewController.swift; sourceTree = "<group>"; };
 		F3841DC01AD0990C00A49B6E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ViewControllers/DetailViewController.swift; sourceTree = "<group>"; };
 		F3841DC41AD09A2D00A49B6E /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchModel.swift; path = Library/SearchModel.swift; sourceTree = "<group>"; };
+		F3841DC61AD0A0C800A49B6E /* EtsyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EtsyService.swift; path = Library/EtsyService.swift; sourceTree = "<group>"; };
+		F3841DCA1AD0A17C00A49B6E /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Listing.swift; path = Models/Listing.swift; sourceTree = "<group>"; };
+		F3841DCD1AD0A1F800A49B6E /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCell.swift; path = Views/ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 		F31A58831AD08C2E00C15048 /* etsy_app */ = {
 			isa = PBXGroup;
 			children = (
+				F3841DC91AD0A14B00A49B6E /* Models */,
+				F3841DCC1AD0A1D800A49B6E /* Views */,
 				F3841DBB1AD0985800A49B6E /* ViewControllers */,
 				F3841DC31AD09A1500A49B6E /* Library */,
 				F3841DC21AD099C200A49B6E /* Interface */,
@@ -184,8 +192,25 @@
 			isa = PBXGroup;
 			children = (
 				F3841DC41AD09A2D00A49B6E /* SearchModel.swift */,
+				F3841DC61AD0A0C800A49B6E /* EtsyService.swift */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		F3841DC91AD0A14B00A49B6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3841DCA1AD0A17C00A49B6E /* Listing.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F3841DCC1AD0A1D800A49B6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3841DCD1AD0A1F800A49B6E /* ListCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,9 +365,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3841DBD1AD098E800A49B6E /* SearchViewController.swift in Sources */,
+				F3841DCB1AD0A17C00A49B6E /* Listing.swift in Sources */,
 				F31A58871AD08C2E00C15048 /* AppDelegate.swift in Sources */,
 				F3841DBF1AD098FC00A49B6E /* ResultsViewController.swift in Sources */,
 				F3841DC51AD09A2D00A49B6E /* SearchModel.swift in Sources */,
+				F3841DCE1AD0A1F800A49B6E /* ListCell.swift in Sources */,
+				F3841DC71AD0A0C800A49B6E /* EtsyService.swift in Sources */,
 				F3841DC11AD0990C00A49B6E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

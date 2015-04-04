@@ -9,5 +9,18 @@
 import UIKit
 
 class SearchModel: NSObject {
-    var keyword: String?
+    var keyword: String!
+    
+    var results: [Listing]!
+    var numResults: Int!
+    
+    override init() {
+        super.init()
+        
+        // Set default values
+        keyword = ""
+        
+        results = []
+        numResults = 0
+    }
 }

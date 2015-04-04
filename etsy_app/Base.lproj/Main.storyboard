@@ -68,13 +68,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="100" id="7Cc-74-oCq">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="100" id="7Cc-74-oCq" customClass="ListCell" customModule="etsy_app" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Cc-74-oCq" id="AXM-Ca-EII">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
-                                            <rect key="frame" x="8" y="39" width="89" height="21"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-G4-6J4">
+                                            <rect key="frame" x="13" y="11" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="75" id="W4K-sZ-IxA"/>
+                                                <constraint firstAttribute="width" constant="75" id="eJ5-0c-DIF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
+                                            <rect key="frame" x="108" y="39" width="33" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -82,12 +89,14 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="a4r-we-UOj" secondAttribute="centerY" id="5Ro-Dg-3ac"/>
-                                        <constraint firstItem="a4r-we-UOj" firstAttribute="leading" secondItem="AXM-Ca-EII" secondAttribute="leadingMargin" id="Bz2-yW-0DH"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="a4r-we-UOj" secondAttribute="bottom" constant="31" id="T7P-rD-erw"/>
-                                        <constraint firstItem="a4r-we-UOj" firstAttribute="top" secondItem="AXM-Ca-EII" secondAttribute="topMargin" constant="31" id="Xzn-DE-390"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Sm3-G4-6J4" secondAttribute="bottom" constant="5" id="6Ey-60-Fqg"/>
+                                        <constraint firstItem="Sm3-G4-6J4" firstAttribute="leading" secondItem="AXM-Ca-EII" secondAttribute="leadingMargin" constant="5" id="Q1M-Lz-4BB"/>
+                                        <constraint firstItem="a4r-we-UOj" firstAttribute="leading" secondItem="Sm3-G4-6J4" secondAttribute="trailing" constant="20" id="TTP-8i-5Dk"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="listImage" destination="Sm3-G4-6J4" id="fat-3e-wJ8"/>
+                                    <outlet property="title" destination="a4r-we-UOj" id="xxX-cU-4He"/>
                                     <segue destination="JMr-wO-Y0p" kind="show" id="Zlb-Z6-kQK"/>
                                 </connections>
                             </tableViewCell>
@@ -100,7 +109,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFG-2Y-dsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="415"/>
+            <point key="canvasLocation" x="329" y="414"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="R54-qr-Vm5">
