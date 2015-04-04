@@ -45,6 +45,7 @@
 		F31A58961AD08C2E00C15048 /* etsy_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etsy_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31A589B1AD08C2E00C15048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F31A589C1AD08C2E00C15048 /* etsy_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etsy_appTests.swift; sourceTree = "<group>"; };
+		F33F45F41AD0A71C007F2E65 /* bridging_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging_header.h; sourceTree = "<group>"; };
 		F3841DBC1AD098E800A49B6E /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ViewControllers/SearchViewController.swift; sourceTree = "<group>"; };
 		F3841DBE1AD098FC00A49B6E /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsViewController.swift; path = ViewControllers/ResultsViewController.swift; sourceTree = "<group>"; };
 		F3841DC01AD0990C00A49B6E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ViewControllers/DetailViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				F31A58861AD08C2E00C15048 /* AppDelegate.swift */,
 				F31A58851AD08C2E00C15048 /* Info.plist */,
 				F31A588D1AD08C2E00C15048 /* Images.xcassets */,
+				F33F45F41AD0A71C007F2E65 /* bridging_header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -498,6 +500,7 @@
 				INFOPLIST_FILE = etsy_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = etsy_app/bridging_header.h;
 			};
 			name = Debug;
 		};
@@ -509,6 +512,7 @@
 				INFOPLIST_FILE = etsy_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = etsy_app/bridging_header.h;
 			};
 			name = Release;
 		};

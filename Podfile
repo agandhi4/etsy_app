@@ -6,6 +6,7 @@ use_frameworks!
 target 'etsy_app' do
   pod 'Alamofire', '~> 1.1'
   pod 'SwiftyJSON', '~> 2.1'
+  pod 'SDWebImage', '~> 3.7'
 end
 
 target 'etsy_appTests' do

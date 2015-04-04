@@ -17,6 +17,6 @@ class SearchViewController: UIViewController {
         
         // Pass model to the next view controller
         var destination = segue.destinationViewController as ResultsViewController
-        destination.searchModel = searchModel
+        destination.searchModel = searchModel	
     }
 }

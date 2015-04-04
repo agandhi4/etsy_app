@@ -7,274 +7,447 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		516FA98C3C62689EBDB05787 /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		542C631556F240B8DE95B6E1 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55BA29A717C796FE66668698 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */; };
-		A9D52B90E9AB23042B4B2644 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C8014F375A78209DBAC9D /* SwiftyJSON.swift */; };
-		BECEF273DF7E963FAE95E92B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
-		C46FF6DB3C77B1212C6EB50B /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */; };
-		C84D61A3116BA60461ECC663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
-		D5F4AA45D253CD2BC47E80A9 /* Pods-etsy_app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6972555FF512A8CB5A89A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364787777782CFDC99F042AA /* Foundation.framework */; };
-		EFA2C79435A911EDEC40E43C /* Pods-etsy_app-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */; };
-		FF8940BFE5DC1B538EEB0EBD /* Pods-etsy_app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */; };
+		0D8186CB3D978469027769A8 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 331A247AC205E0ABC56C8F2C /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12FA09390E8B3E57D4887467 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 825A29438CA38D2D13F0A5ED /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1648BFEA7C87F348EF711C12 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F079542471F6996F89CE6 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		18F79DEF7240AA924BD95160 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EC7648F8CE967711B63ADD /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F880E756157CEB97A57BA01 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A233B187CB2226D4806C3281 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		21C9F4FFB30F7BE85A38E53C /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7A4F71A6D9D16B8D1E256D7 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23ACA4802EB03113454DC11F /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BF186B26C21F6F1451F4DAB4 /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		387315508049CFBE38C08546 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D12357D9CC7E38874BBACA /* SwiftyJSON.swift */; };
+		468309DCF3CAA696D7FE3635 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F33419D8EB738B88F4BB29 /* Foundation.framework */; };
+		4DBBCB5449F4C94BDA159437 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F33419D8EB738B88F4BB29 /* Foundation.framework */; };
+		582FAFB3921D3415C55EBB3A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABF2A51B4130EBE25D14279 /* ImageIO.framework */; };
+		59E0DED298052C5DFD6E63E2 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD3723E349363C19EF7A1CF /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63F5E6E423DDE0FD6E5B1FF8 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1728E0C6E1383865CCB91C55 /* Pods-etsy_app-SwiftyJSON-dummy.m */; };
+		655C2579F808D47087580EEC /* Pods-etsy_app-SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A50168C373EFDCE152F31AFC /* Pods-etsy_app-SDWebImage-dummy.m */; };
+		681E628D848C58F17070C348 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = BE34532E69F8088349CBEC92 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BAC00FABC3DA7D5C1231F99 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A89E6A3DC06733D6AAB8DF56 /* Pods-etsy_app-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFEF41D3B284ECEDAC7DEB9 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 43684576BA10890A8ECD84C3 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C06AB663E960F40485CCBD3 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E7942AAB2E39CC4652D1E388 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F9ABBD069895312CEB28E51 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D197E3C2EE2BE6C666FFD1AA /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7696E86BD7FD26D02FA4060D /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F53E51C7E985DC9059987AB /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76B1ED1FAD640FCC6576E310 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = BB974E39FBA01B336B2CA1DC /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8CC8911EB7111C4FC2C61E /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8990746E2EAD15277AC47DB0 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F313B319D8CCE698B7DF9FA /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CC9AFD8326CAE7DBC4F327 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		818055E49D81A1DF6BB90D0C /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E99A2D56ABD4EA90DEF1EE /* Pods-etsy_app-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C5E3EC747A700095B93DE7A /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E58F56F4E426CB549C2B38 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F3424C72D7800FB3063A206 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E4E9EDE6F90C614363851D /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928D95CE5C985475553ECDED /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FFEAB463188721280A34F3 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C01E705189B8C37660B7E6A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3EF80CE84E23B942F5B9B /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A52250B0F3E454224C325DB7 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D97EFB375BA841DAA4D99F1E /* SDWebImageDecoder.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A9862D6AB6D1356A12B7FCB0 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE835997D17293F48B3F27DE /* Alamofire.swift */; };
+		AD42495D25F0EF6F614CECB0 /* Pods-etsy_app-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0185E42C8FE15C8FE2AB66B2 /* Pods-etsy_app-Alamofire-dummy.m */; };
+		B0D751F4B58DEEBEAFEA4436 /* Pods-etsy_app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 267C4900CDBA136B4AF3AC90 /* Pods-etsy_app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7E99FBE39B5ECC46F79645E /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 164AACE4636583607F9D9FFE /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C229462F7A1178EDC51250C8 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B7D11F39D9116575BB7E2EDC /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D78966140F98A3E706183531 /* Pods-etsy_app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DF9D4D96C0196AE8E22A37 /* Pods-etsy_app-dummy.m */; };
+		D98292B019BCC57A055FD6AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F33419D8EB738B88F4BB29 /* Foundation.framework */; };
+		DEF68FCC25C5A15471B3F24D /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B17B238E17517FF8EF31C601 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DF3B8314E600408B459629FC /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 26674970D5006194C95CC815 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1B31DD554FE8B0801CE5294 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E339574122D028E1A04BF1 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA699C4C2B00F8BCEACCF3DA /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D24B904D6F6FDF76CC950 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EAB5122A1B327F6DC5A9736E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F33419D8EB738B88F4BB29 /* Foundation.framework */; };
+		EE848D4C93B769B559B965C7 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F5C9C1838034E68516998AC /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0BAC9D772C573C5D47E087E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F1106012E9288CCC5E76E8 /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F87CB6042C8B481C25361742 /* Pods-etsy_app-SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88CBE3C1D085A5A69FF500E2 /* Pods-etsy_app-SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		58FFCC95FCBC22B5D9608C2F /* PBXContainerItemProxy */ = {
+		294081AE098E475030BE8C62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61EB0F70F6907D6EF95C336F /* Project object */;
+			containerPortal = B6C4FAD39D3961D78A98F34A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A34E5ED2EF748E3632AE934;
+			remoteGlobalIDString = C7131CCA334E3336CC8C9614;
 			remoteInfo = "Pods-etsy_app-SwiftyJSON";
 		};
-		B3D430339DC2CD6353B33E1C /* PBXContainerItemProxy */ = {
+		B3E77CB1F123B19B5DE9C4B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61EB0F70F6907D6EF95C336F /* Project object */;
+			containerPortal = B6C4FAD39D3961D78A98F34A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 84CFAB5067642CD282E13ED3;
+			remoteGlobalIDString = 1AE9D94407DB386A6B9A5AA0;
+			remoteInfo = "Pods-etsy_app-SDWebImage";
+		};
+		DA58BC233BE2D140C30B6CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6C4FAD39D3961D78A98F34A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C7D5A21060C22CB367C640E;
 			remoteInfo = "Pods-etsy_app-Alamofire";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-Alamofire-dummy.m"; sourceTree = "<group>"; };
-		18F2FDEB1F2CDF1F488DB58C /* Pods-etsy_app-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.debug.xcconfig"; sourceTree = "<group>"; };
-		3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		364787777782CFDC99F042AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.release.xcconfig"; sourceTree = "<group>"; };
-		5267A480503CF9D9CEA9CA86 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5294FE4AA092CD7A9811524D /* Pods-etsy_app-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-Alamofire.modulemap"; sourceTree = "<group>"; };
-		533C8014F375A78209DBAC9D /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		752B4E4FEEDD585D995C3A2B /* Pods-etsy_app-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire.xcconfig"; sourceTree = "<group>"; };
-		759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
-		77B6C6AFD42E2FFE9C4B061D /* Pods-etsy_app-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		79C694B55CE6ADA282F3B112 /* Pods-etsy_app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app.modulemap"; sourceTree = "<group>"; };
-		7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_etsy_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86029E450A3CEB11B1D26A0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		879C33338CD399EB5404C1F8 /* Pods-etsy_app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-resources.sh"; sourceTree = "<group>"; };
-		87FA9FE21C6CABB997EFDCE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-umbrella.h"; sourceTree = "<group>"; };
-		A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD1DEABAE4BF604AA4B26328 /* Pods-etsy_app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-etsy_app-acknowledgements.plist"; sourceTree = "<group>"; };
-		C573F15ACF050B4F5A0893F1 /* Pods-etsy_app-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		C93C3C7F922AE014F493C489 /* Pods-etsy_app-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		CA5A4E01AD19EAAAA23285BC /* Pods-etsy_app-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-environment.h"; sourceTree = "<group>"; };
-		CA5D7AA13C9345206AD0F5EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D27735922A7C686EFBAE08AD /* Pods-etsy_app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-frameworks.sh"; sourceTree = "<group>"; };
-		D8EE440823739F8384703498 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E88071C2BD108A83F0203531 /* Pods-etsy_app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-etsy_app-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-dummy.m"; sourceTree = "<group>"; };
+		0185E42C8FE15C8FE2AB66B2 /* Pods-etsy_app-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		06F33419D8EB738B88F4BB29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		08EA1C588EF42820D207CF41 /* Pods-etsy_app-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-frameworks.sh"; sourceTree = "<group>"; };
+		0AB3001AC07B2B04530D9D96 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3C3798DB2C0E8AB8A05944 /* Pods-etsy_app-SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-SDWebImage.modulemap"; sourceTree = "<group>"; };
+		11D186211794925FA45B0AAE /* Pods-etsy_app-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		164AACE4636583607F9D9FFE /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		1728E0C6E1383865CCB91C55 /* Pods-etsy_app-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		181D03EB4F8642D6FD5D4E98 /* Pods-etsy_app-SDWebImage-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SDWebImage-Private.xcconfig"; sourceTree = "<group>"; };
+		18EC10F29DD0F44BFBAB8648 /* Pods-etsy_app-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		2575E9B9602588469B192877 /* Pods-etsy_app-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-environment.h"; sourceTree = "<group>"; };
+		26674970D5006194C95CC815 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		267C4900CDBA136B4AF3AC90 /* Pods-etsy_app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-umbrella.h"; sourceTree = "<group>"; };
+		2B76A38237B1466548C3994D /* Pods-etsy_app-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		2D366130FCD8C50D3402D749 /* Pods-etsy_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.release.xcconfig"; sourceTree = "<group>"; };
+		2F5C9C1838034E68516998AC /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		331A247AC205E0ABC56C8F2C /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		38F36411929C54D50080B904 /* Pods-etsy_app-SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		395E104C41ADC731B40222D2 /* Pods-etsy_app-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		3A5D47C426B3F3E9C7009A02 /* Pods-etsy_app-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3DB3EF80CE84E23B942F5B9B /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		43684576BA10890A8ECD84C3 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		467C06D29BABA27B1DB26347 /* Pods_etsy_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_etsy_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD3723E349363C19EF7A1CF /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		4F1A8790D7DE59FF43C1509B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AE686B01B1EFBD7CEB87C7 /* Pods-etsy_app-SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SDWebImage.xcconfig"; sourceTree = "<group>"; };
+		57F1106012E9288CCC5E76E8 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		5F8FD3632C3DA900CA0BA3AF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62985BB148894A289AF5D1A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F53E51C7E985DC9059987AB /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		7C8F3D3F16DD6BA2E6239D8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0D24B904D6F6FDF76CC950 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		825A29438CA38D2D13F0A5ED /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		83DF9D4D96C0196AE8E22A37 /* Pods-etsy_app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-dummy.m"; sourceTree = "<group>"; };
+		883EBBAC94FAF0A0F8FAB1C0 /* Pods-etsy_app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-etsy_app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88CBE3C1D085A5A69FF500E2 /* Pods-etsy_app-SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		8990746E2EAD15277AC47DB0 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		89FFEAB463188721280A34F3 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		8D998FD9E199215BFA50252D /* Pods-etsy_app-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app-Alamofire.modulemap"; sourceTree = "<group>"; };
+		8E7F079542471F6996F89CE6 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		90E99A2D56ABD4EA90DEF1EE /* Pods-etsy_app-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		93E339574122D028E1A04BF1 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		94D12357D9CC7E38874BBACA /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		9AD2ED4637BE9B910297EC2E /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A233B187CB2226D4806C3281 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A50168C373EFDCE152F31AFC /* Pods-etsy_app-SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-etsy_app-SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		A89E6A3DC06733D6AAB8DF56 /* Pods-etsy_app-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		AE4F2386C28C005C6ED537C8 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		B17B238E17517FF8EF31C601 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		B5EC7648F8CE967711B63ADD /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		B7D11F39D9116575BB7E2EDC /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		BB974E39FBA01B336B2CA1DC /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		BCD795B57281C754FB0CF6F2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE34532E69F8088349CBEC92 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		BF186B26C21F6F1451F4DAB4 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		C3CC9AFD8326CAE7DBC4F327 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		C9E58F56F4E426CB549C2B38 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		CABF2A51B4130EBE25D14279 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		D197E3C2EE2BE6C666FFD1AA /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		D67D9D0A46843F0B484CE311 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A4F71A6D9D16B8D1E256D7 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		D7BA3FCB77A03D25A9405B40 /* Pods-etsy_app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-etsy_app-acknowledgements.plist"; sourceTree = "<group>"; };
+		D863FD69A4074D5CF65FBC35 /* Pods-etsy_app-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-etsy_app-resources.sh"; sourceTree = "<group>"; };
+		D97EFB375BA841DAA4D99F1E /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		D9F09BEF823091F1240B587D /* Pods-etsy_app-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-etsy_app-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E504EF044C6C98E9B2C4D448 /* Pods-etsy_app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-etsy_app.modulemap"; sourceTree = "<group>"; };
+		E76B8CF37C2F92C6A3674956 /* Pods-etsy_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-etsy_app.debug.xcconfig"; sourceTree = "<group>"; };
+		E7942AAB2E39CC4652D1E388 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		E8E4E9EDE6F90C614363851D /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		EE835997D17293F48B3F27DE /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A9AA9228BEA65C17D821834D /* Frameworks */ = {
+		4C68134861702433E63BF5BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECEF273DF7E963FAE95E92B /* Foundation.framework in Frameworks */,
+				EAB5122A1B327F6DC5A9736E /* Foundation.framework in Frameworks */,
+				582FAFB3921D3415C55EBB3A /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C50C239F09A86C6AD4F8426E /* Frameworks */ = {
+		67F699973ED083DE8A25250C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6972555FF512A8CB5A89A66 /* Foundation.framework in Frameworks */,
+				4DBBCB5449F4C94BDA159437 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1EC643AC26B96C2502838B2 /* Frameworks */ = {
+		ABC72491AA5AC9064D04FA96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84D61A3116BA60461ECC663 /* Foundation.framework in Frameworks */,
+				D98292B019BCC57A055FD6AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5DE1BF62BA37AFA88FDBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468309DCF3CAA696D7FE3635 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B7015EAABBE209FD6C87888 /* Support Files */ = {
+		0F5D8FDFE19E6BA6A2C0DB1B /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				86029E450A3CEB11B1D26A0D /* Info.plist */,
-				77B6C6AFD42E2FFE9C4B061D /* Pods-etsy_app-SwiftyJSON.modulemap */,
-				C93C3C7F922AE014F493C489 /* Pods-etsy_app-SwiftyJSON.xcconfig */,
-				3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */,
-				638F8C96B1D726B771B25911 /* Pods-etsy_app-SwiftyJSON-dummy.m */,
-				C573F15ACF050B4F5A0893F1 /* Pods-etsy_app-SwiftyJSON-prefix.pch */,
-				9AF4E0724A2BADDB1A5B5E14 /* Pods-etsy_app-SwiftyJSON-umbrella.h */,
+				6D9D33CD797EDDA81E5B3EF6 /* Core */,
+				2CD8317538C7B9BEB8483D2D /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-etsy_app-SwiftyJSON";
+			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		219201231A62D8A483F4B21F /* Targets Support Files */ = {
+		14F15C35666A6D6BD5EDDAC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E26E0ECFFFEA2EBFAE528F45 /* Pods-etsy_app */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2F6452B5D081634C6E72DFF2 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				7F3D3B1E60B0B5058317A8E8 /* Alamofire.swift */,
-				6754320D648413A7F8C6078A /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		4260BB8B0481EFE738B7B905 = {
-			isa = PBXGroup;
-			children = (
-				5267A480503CF9D9CEA9CA86 /* Podfile */,
-				81D637C28ABCEBA34CAB0070 /* Frameworks */,
-				7EA0E919447257FF11AEBAEE /* Pods */,
-				B9A45423352C95FB45CF269B /* Products */,
-				219201231A62D8A483F4B21F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		6356DE587975101481342128 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				533C8014F375A78209DBAC9D /* SwiftyJSON.swift */,
-				0B7015EAABBE209FD6C87888 /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		6754320D648413A7F8C6078A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA5D7AA13C9345206AD0F5EB /* Info.plist */,
-				5294FE4AA092CD7A9811524D /* Pods-etsy_app-Alamofire.modulemap */,
-				752B4E4FEEDD585D995C3A2B /* Pods-etsy_app-Alamofire.xcconfig */,
-				759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */,
-				11B2C28676BBE1B787C0FA3D /* Pods-etsy_app-Alamofire-dummy.m */,
-				18F2FDEB1F2CDF1F488DB58C /* Pods-etsy_app-Alamofire-prefix.pch */,
-				A8E53E04EBC08DB3344F59E1 /* Pods-etsy_app-Alamofire-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-etsy_app-Alamofire";
-			sourceTree = "<group>";
-		};
-		7EA0E919447257FF11AEBAEE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2F6452B5D081634C6E72DFF2 /* Alamofire */,
-				6356DE587975101481342128 /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		81D637C28ABCEBA34CAB0070 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F437AC4E78FAC1E13D8E66E8 /* iOS */,
+				CB58C5B783C19D441096A855 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B9A45423352C95FB45CF269B /* Products */ = {
+		2135D6E63C6A5B4B9B265784 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */,
-				842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */,
-				D8EE440823739F8384703498 /* SwiftyJSON.framework */,
+				94D12357D9CC7E38874BBACA /* SwiftyJSON.swift */,
+				EAEDA70E08926254084A563E /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2C16CBF502AA226A2712E8F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67D9D0A46843F0B484CE311 /* Alamofire.framework */,
+				467C06D29BABA27B1DB26347 /* Pods_etsy_app.framework */,
+				9AD2ED4637BE9B910297EC2E /* SDWebImage.framework */,
+				5F8FD3632C3DA900CA0BA3AF /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E26E0ECFFFEA2EBFAE528F45 /* Pods-etsy_app */ = {
+		2CD8317538C7B9BEB8483D2D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				87FA9FE21C6CABB997EFDCE0 /* Info.plist */,
-				79C694B55CE6ADA282F3B112 /* Pods-etsy_app.modulemap */,
-				E88071C2BD108A83F0203531 /* Pods-etsy_app-acknowledgements.markdown */,
-				BD1DEABAE4BF604AA4B26328 /* Pods-etsy_app-acknowledgements.plist */,
-				F33E21EE6759FC2ACFB9D34B /* Pods-etsy_app-dummy.m */,
-				CA5A4E01AD19EAAAA23285BC /* Pods-etsy_app-environment.h */,
-				D27735922A7C686EFBAE08AD /* Pods-etsy_app-frameworks.sh */,
-				879C33338CD399EB5404C1F8 /* Pods-etsy_app-resources.sh */,
-				A1132EBB0AFD1765E58665EA /* Pods-etsy_app-umbrella.h */,
-				252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */,
-				44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */,
+				62985BB148894A289AF5D1A4 /* Info.plist */,
+				0D3C3798DB2C0E8AB8A05944 /* Pods-etsy_app-SDWebImage.modulemap */,
+				57AE686B01B1EFBD7CEB87C7 /* Pods-etsy_app-SDWebImage.xcconfig */,
+				181D03EB4F8642D6FD5D4E98 /* Pods-etsy_app-SDWebImage-Private.xcconfig */,
+				A50168C373EFDCE152F31AFC /* Pods-etsy_app-SDWebImage-dummy.m */,
+				38F36411929C54D50080B904 /* Pods-etsy_app-SDWebImage-prefix.pch */,
+				88CBE3C1D085A5A69FF500E2 /* Pods-etsy_app-SDWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-etsy_app-SDWebImage";
+			sourceTree = "<group>";
+		};
+		60DD36BBD6A5145B0B3E84D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEAF45916397BBE823E7B6CE /* Alamofire */,
+				0F5D8FDFE19E6BA6A2C0DB1B /* SDWebImage */,
+				2135D6E63C6A5B4B9B265784 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65313E424BFDF348BAFCD9C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A7FAC91805C0F052EE08E5 /* Pods-etsy_app */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6D9D33CD797EDDA81E5B3EF6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BE34532E69F8088349CBEC92 /* NSData+ImageContentType.h */,
+				3DB3EF80CE84E23B942F5B9B /* NSData+ImageContentType.m */,
+				D7A4F71A6D9D16B8D1E256D7 /* SDImageCache.h */,
+				B17B238E17517FF8EF31C601 /* SDImageCache.m */,
+				6F53E51C7E985DC9059987AB /* SDWebImageCompat.h */,
+				57F1106012E9288CCC5E76E8 /* SDWebImageCompat.m */,
+				2F5C9C1838034E68516998AC /* SDWebImageDecoder.h */,
+				D97EFB375BA841DAA4D99F1E /* SDWebImageDecoder.m */,
+				BB974E39FBA01B336B2CA1DC /* SDWebImageDownloader.h */,
+				BF186B26C21F6F1451F4DAB4 /* SDWebImageDownloader.m */,
+				B7D11F39D9116575BB7E2EDC /* SDWebImageDownloaderOperation.h */,
+				8E7F079542471F6996F89CE6 /* SDWebImageDownloaderOperation.m */,
+				4CD3723E349363C19EF7A1CF /* SDWebImageManager.h */,
+				89FFEAB463188721280A34F3 /* SDWebImageManager.m */,
+				8990746E2EAD15277AC47DB0 /* SDWebImageOperation.h */,
+				164AACE4636583607F9D9FFE /* SDWebImagePrefetcher.h */,
+				825A29438CA38D2D13F0A5ED /* SDWebImagePrefetcher.m */,
+				26674970D5006194C95CC815 /* UIButton+WebCache.h */,
+				B5EC7648F8CE967711B63ADD /* UIButton+WebCache.m */,
+				43684576BA10890A8ECD84C3 /* UIImage+GIF.h */,
+				7D0D24B904D6F6FDF76CC950 /* UIImage+GIF.m */,
+				93E339574122D028E1A04BF1 /* UIImage+MultiFormat.h */,
+				C3CC9AFD8326CAE7DBC4F327 /* UIImage+MultiFormat.m */,
+				C9E58F56F4E426CB549C2B38 /* UIImageView+HighlightedWebCache.h */,
+				331A247AC205E0ABC56C8F2C /* UIImageView+HighlightedWebCache.m */,
+				E8E4E9EDE6F90C614363851D /* UIImageView+WebCache.h */,
+				D197E3C2EE2BE6C666FFD1AA /* UIImageView+WebCache.m */,
+				E7942AAB2E39CC4652D1E388 /* UIView+WebCacheOperation.h */,
+				A233B187CB2226D4806C3281 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7E4836700C4E6EED0AAB7093 = {
+			isa = PBXGroup;
+			children = (
+				BCD795B57281C754FB0CF6F2 /* Podfile */,
+				14F15C35666A6D6BD5EDDAC3 /* Frameworks */,
+				60DD36BBD6A5145B0B3E84D0 /* Pods */,
+				2C16CBF502AA226A2712E8F7 /* Products */,
+				65313E424BFDF348BAFCD9C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A7FAC91805C0F052EE08E5 /* Pods-etsy_app */ = {
+			isa = PBXGroup;
+			children = (
+				4F1A8790D7DE59FF43C1509B /* Info.plist */,
+				E504EF044C6C98E9B2C4D448 /* Pods-etsy_app.modulemap */,
+				883EBBAC94FAF0A0F8FAB1C0 /* Pods-etsy_app-acknowledgements.markdown */,
+				D7BA3FCB77A03D25A9405B40 /* Pods-etsy_app-acknowledgements.plist */,
+				83DF9D4D96C0196AE8E22A37 /* Pods-etsy_app-dummy.m */,
+				2575E9B9602588469B192877 /* Pods-etsy_app-environment.h */,
+				08EA1C588EF42820D207CF41 /* Pods-etsy_app-frameworks.sh */,
+				D863FD69A4074D5CF65FBC35 /* Pods-etsy_app-resources.sh */,
+				267C4900CDBA136B4AF3AC90 /* Pods-etsy_app-umbrella.h */,
+				E76B8CF37C2F92C6A3674956 /* Pods-etsy_app.debug.xcconfig */,
+				2D366130FCD8C50D3402D749 /* Pods-etsy_app.release.xcconfig */,
 			);
 			name = "Pods-etsy_app";
 			path = "Target Support Files/Pods-etsy_app";
 			sourceTree = "<group>";
 		};
-		F437AC4E78FAC1E13D8E66E8 /* iOS */ = {
+		BEAF45916397BBE823E7B6CE /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				364787777782CFDC99F042AA /* Foundation.framework */,
+				EE835997D17293F48B3F27DE /* Alamofire.swift */,
+				E205618627E5224F3F41FFC4 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		CB58C5B783C19D441096A855 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				06F33419D8EB738B88F4BB29 /* Foundation.framework */,
+				CABF2A51B4130EBE25D14279 /* ImageIO.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		E205618627E5224F3F41FFC4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AB3001AC07B2B04530D9D96 /* Info.plist */,
+				8D998FD9E199215BFA50252D /* Pods-etsy_app-Alamofire.modulemap */,
+				395E104C41ADC731B40222D2 /* Pods-etsy_app-Alamofire.xcconfig */,
+				11D186211794925FA45B0AAE /* Pods-etsy_app-Alamofire-Private.xcconfig */,
+				0185E42C8FE15C8FE2AB66B2 /* Pods-etsy_app-Alamofire-dummy.m */,
+				D9F09BEF823091F1240B587D /* Pods-etsy_app-Alamofire-prefix.pch */,
+				A89E6A3DC06733D6AAB8DF56 /* Pods-etsy_app-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-etsy_app-Alamofire";
+			sourceTree = "<group>";
+		};
+		EAEDA70E08926254084A563E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C8F3D3F16DD6BA2E6239D8C /* Info.plist */,
+				18EC10F29DD0F44BFBAB8648 /* Pods-etsy_app-SwiftyJSON.modulemap */,
+				2B76A38237B1466548C3994D /* Pods-etsy_app-SwiftyJSON.xcconfig */,
+				AE4F2386C28C005C6ED537C8 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */,
+				1728E0C6E1383865CCB91C55 /* Pods-etsy_app-SwiftyJSON-dummy.m */,
+				3A5D47C426B3F3E9C7009A02 /* Pods-etsy_app-SwiftyJSON-prefix.pch */,
+				90E99A2D56ABD4EA90DEF1EE /* Pods-etsy_app-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-etsy_app-SwiftyJSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2A4A590B54F19067E4B34DF0 /* Headers */ = {
+		54DA261516097E18C304D5D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5F4AA45D253CD2BC47E80A9 /* Pods-etsy_app-umbrella.h in Headers */,
+				818055E49D81A1DF6BB90D0C /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE1715801B02B65AF51B31C9 /* Headers */ = {
+		5FBECCBD5485C7EE7609BA4F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542C631556F240B8DE95B6E1 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */,
+				6BAC00FABC3DA7D5C1231F99 /* Pods-etsy_app-Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F30D5084F55242263E497018 /* Headers */ = {
+		8CA1283FF6D8ADD669D53EF5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				516FA98C3C62689EBDB05787 /* Pods-etsy_app-SwiftyJSON-umbrella.h in Headers */,
+				681E628D848C58F17070C348 /* NSData+ImageContentType.h in Headers */,
+				F87CB6042C8B481C25361742 /* Pods-etsy_app-SDWebImage-umbrella.h in Headers */,
+				21C9F4FFB30F7BE85A38E53C /* SDImageCache.h in Headers */,
+				7696E86BD7FD26D02FA4060D /* SDWebImageCompat.h in Headers */,
+				EE848D4C93B769B559B965C7 /* SDWebImageDecoder.h in Headers */,
+				76B1ED1FAD640FCC6576E310 /* SDWebImageDownloader.h in Headers */,
+				C229462F7A1178EDC51250C8 /* SDWebImageDownloaderOperation.h in Headers */,
+				59E0DED298052C5DFD6E63E2 /* SDWebImageManager.h in Headers */,
+				7B8CC8911EB7111C4FC2C61E /* SDWebImageOperation.h in Headers */,
+				B7E99FBE39B5ECC46F79645E /* SDWebImagePrefetcher.h in Headers */,
+				DF3B8314E600408B459629FC /* UIButton+WebCache.h in Headers */,
+				6BFEF41D3B284ECEDAC7DEB9 /* UIImage+GIF.h in Headers */,
+				E1B31DD554FE8B0801CE5294 /* UIImage+MultiFormat.h in Headers */,
+				8C5E3EC747A700095B93DE7A /* UIImageView+HighlightedWebCache.h in Headers */,
+				8F3424C72D7800FB3063A206 /* UIImageView+WebCache.h in Headers */,
+				6C06AB663E960F40485CCBD3 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF63B9BCEFA33ABCA9F4751B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0D751F4B58DEEBEAFEA4436 /* Pods-etsy_app-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */ = {
+		1AE9D94407DB386A6B9A5AA0 /* Pods-etsy_app-SDWebImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D5E137C129321C7F027126 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */;
+			buildConfigurationList = 0AD71EA1090C5EB4A92CC2E8 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SDWebImage" */;
 			buildPhases = (
-				E476681C3C3A627E5117F0F0 /* Sources */,
-				A9AA9228BEA65C17D821834D /* Frameworks */,
-				F30D5084F55242263E497018 /* Headers */,
+				E9B3354CAFC835F57404B958 /* Sources */,
+				4C68134861702433E63BF5BF /* Frameworks */,
+				8CA1283FF6D8ADD669D53EF5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-etsy_app-SwiftyJSON";
-			productName = "Pods-etsy_app-SwiftyJSON";
-			productReference = D8EE440823739F8384703498 /* SwiftyJSON.framework */;
+			name = "Pods-etsy_app-SDWebImage";
+			productName = "Pods-etsy_app-SDWebImage";
+			productReference = 9AD2ED4637BE9B910297EC2E /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */ = {
+		1C7D5A21060C22CB367C640E /* Pods-etsy_app-Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0710E958C3A0B54B109B6FBB /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */;
+			buildConfigurationList = D97E3A39235ECB2E78588904 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */;
 			buildPhases = (
-				19C4A3FB1185F357EF98D793 /* Sources */,
-				E1EC643AC26B96C2502838B2 /* Frameworks */,
-				BE1715801B02B65AF51B31C9 /* Headers */,
+				A23EEFACBB0636D5D9CA0B53 /* Sources */,
+				FD5DE1BF62BA37AFA88FDBF1 /* Frameworks */,
+				5FBECCBD5485C7EE7609BA4F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -282,304 +455,148 @@
 			);
 			name = "Pods-etsy_app-Alamofire";
 			productName = "Pods-etsy_app-Alamofire";
-			productReference = B53C2C34AE82B30A9012DAF4 /* Alamofire.framework */;
+			productReference = D67D9D0A46843F0B484CE311 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E97BD4499CC0D79C45309326 /* Pods-etsy_app */ = {
+		638CB41723BF2FA8B4086E70 /* Pods-etsy_app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42A1F76D40778110A20383EE /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */;
+			buildConfigurationList = 83B76F0661EC533273BD9B8E /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */;
 			buildPhases = (
-				5A2142AD73BC3C2508CE0538 /* Sources */,
-				C50C239F09A86C6AD4F8426E /* Frameworks */,
-				2A4A590B54F19067E4B34DF0 /* Headers */,
+				4BC73AAEEE6A60D1C5A2FC48 /* Sources */,
+				ABC72491AA5AC9064D04FA96 /* Frameworks */,
+				FF63B9BCEFA33ABCA9F4751B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				11CA27300258154185F2AD27 /* PBXTargetDependency */,
-				DD4DE6453365ADE49CF55A53 /* PBXTargetDependency */,
+				131562AC17107A23A5A97FA5 /* PBXTargetDependency */,
+				9C80A988435E948319A89DCC /* PBXTargetDependency */,
+				390F16585AA00727263FBEAA /* PBXTargetDependency */,
 			);
 			name = "Pods-etsy_app";
 			productName = "Pods-etsy_app";
-			productReference = 842D1E43A601FBA0BA4FDC2D /* Pods_etsy_app.framework */;
+			productReference = 467C06D29BABA27B1DB26347 /* Pods_etsy_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7131CCA334E3336CC8C9614 /* Pods-etsy_app-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FE32B468F0F8FFA8AF17FF /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */;
+			buildPhases = (
+				C0586A0EE0CA6350A2A604B0 /* Sources */,
+				67F699973ED083DE8A25250C /* Frameworks */,
+				54DA261516097E18C304D5D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-etsy_app-SwiftyJSON";
+			productName = "Pods-etsy_app-SwiftyJSON";
+			productReference = 5F8FD3632C3DA900CA0BA3AF /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		61EB0F70F6907D6EF95C336F /* Project object */ = {
+		B6C4FAD39D3961D78A98F34A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = BEC56AFE58E55CBB90BEE8CE /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 29E63B1731644FA99D183DED /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4260BB8B0481EFE738B7B905;
-			productRefGroup = B9A45423352C95FB45CF269B /* Products */;
+			mainGroup = 7E4836700C4E6EED0AAB7093;
+			productRefGroup = 2C16CBF502AA226A2712E8F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E97BD4499CC0D79C45309326 /* Pods-etsy_app */,
-				84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */,
-				3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */,
+				638CB41723BF2FA8B4086E70 /* Pods-etsy_app */,
+				1C7D5A21060C22CB367C640E /* Pods-etsy_app-Alamofire */,
+				1AE9D94407DB386A6B9A5AA0 /* Pods-etsy_app-SDWebImage */,
+				C7131CCA334E3336CC8C9614 /* Pods-etsy_app-SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19C4A3FB1185F357EF98D793 /* Sources */ = {
+		4BC73AAEEE6A60D1C5A2FC48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C46FF6DB3C77B1212C6EB50B /* Alamofire.swift in Sources */,
-				EFA2C79435A911EDEC40E43C /* Pods-etsy_app-Alamofire-dummy.m in Sources */,
+				D78966140F98A3E706183531 /* Pods-etsy_app-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A2142AD73BC3C2508CE0538 /* Sources */ = {
+		A23EEFACBB0636D5D9CA0B53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8940BFE5DC1B538EEB0EBD /* Pods-etsy_app-dummy.m in Sources */,
+				A9862D6AB6D1356A12B7FCB0 /* Alamofire.swift in Sources */,
+				AD42495D25F0EF6F614CECB0 /* Pods-etsy_app-Alamofire-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E476681C3C3A627E5117F0F0 /* Sources */ = {
+		C0586A0EE0CA6350A2A604B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BA29A717C796FE66668698 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */,
-				A9D52B90E9AB23042B4B2644 /* SwiftyJSON.swift in Sources */,
+				63F5E6E423DDE0FD6E5B1FF8 /* Pods-etsy_app-SwiftyJSON-dummy.m in Sources */,
+				387315508049CFBE38C08546 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B3354CAFC835F57404B958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C01E705189B8C37660B7E6A /* NSData+ImageContentType.m in Sources */,
+				655C2579F808D47087580EEC /* Pods-etsy_app-SDWebImage-dummy.m in Sources */,
+				DEF68FCC25C5A15471B3F24D /* SDImageCache.m in Sources */,
+				F0BAC9D772C573C5D47E087E /* SDWebImageCompat.m in Sources */,
+				A52250B0F3E454224C325DB7 /* SDWebImageDecoder.m in Sources */,
+				23ACA4802EB03113454DC11F /* SDWebImageDownloader.m in Sources */,
+				1648BFEA7C87F348EF711C12 /* SDWebImageDownloaderOperation.m in Sources */,
+				928D95CE5C985475553ECDED /* SDWebImageManager.m in Sources */,
+				12FA09390E8B3E57D4887467 /* SDWebImagePrefetcher.m in Sources */,
+				18F79DEF7240AA924BD95160 /* UIButton+WebCache.m in Sources */,
+				EA699C4C2B00F8BCEACCF3DA /* UIImage+GIF.m in Sources */,
+				7F313B319D8CCE698B7DF9FA /* UIImage+MultiFormat.m in Sources */,
+				0D8186CB3D978469027769A8 /* UIImageView+HighlightedWebCache.m in Sources */,
+				6F9ABBD069895312CEB28E51 /* UIImageView+WebCache.m in Sources */,
+				1F880E756157CEB97A57BA01 /* UIView+WebCacheOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11CA27300258154185F2AD27 /* PBXTargetDependency */ = {
+		131562AC17107A23A5A97FA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-etsy_app-Alamofire";
-			target = 84CFAB5067642CD282E13ED3 /* Pods-etsy_app-Alamofire */;
-			targetProxy = B3D430339DC2CD6353B33E1C /* PBXContainerItemProxy */;
+			target = 1C7D5A21060C22CB367C640E /* Pods-etsy_app-Alamofire */;
+			targetProxy = DA58BC233BE2D140C30B6CD0 /* PBXContainerItemProxy */;
 		};
-		DD4DE6453365ADE49CF55A53 /* PBXTargetDependency */ = {
+		390F16585AA00727263FBEAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-etsy_app-SwiftyJSON";
-			target = 3A34E5ED2EF748E3632AE934 /* Pods-etsy_app-SwiftyJSON */;
-			targetProxy = 58FFCC95FCBC22B5D9608C2F /* PBXContainerItemProxy */;
+			target = C7131CCA334E3336CC8C9614 /* Pods-etsy_app-SwiftyJSON */;
+			targetProxy = 294081AE098E475030BE8C62 /* PBXContainerItemProxy */;
+		};
+		9C80A988435E948319A89DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-etsy_app-SDWebImage";
+			target = 1AE9D94407DB386A6B9A5AA0 /* Pods-etsy_app-SDWebImage */;
+			targetProxy = B3E77CB1F123B19B5DE9C4B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		003629AC2F2E1423E9C6F9D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		19429A424E9A4B01E86461E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		240AD0F3A976C129736BBDD6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 252A6C87AD740020A9DF7679 /* Pods-etsy_app.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_etsy_app;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5DB7B4C5657E7A53A6D99E88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3022575490C8BD48EA736897 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		740DD6F9E89CFD8BA0DB11E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44E8926D8937F1F813A11F7A /* Pods-etsy_app.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_etsy_app;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BC7F6A689DB94CE31620A6BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EB802A876C646646DEBF9E4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 759502E272BD8850EC03843F /* Pods-etsy_app-Alamofire-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F7F20FC1317C4FA4C5C7171F /* Debug */ = {
+		2013B017EEC1E901A6C980CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -618,46 +635,312 @@
 			};
 			name = Debug;
 		};
+		499AB0AA59852932924CA477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76B8CF37C2F92C6A3674956 /* Pods-etsy_app.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_etsy_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FDFC9ACC0385281E4BD694D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181D03EB4F8642D6FD5D4E98 /* Pods-etsy_app-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SDWebImage/Pods-etsy_app-SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SDWebImage/Pods-etsy_app-SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B8D322773B29FFFF93FDAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D186211794925FA45B0AAE /* Pods-etsy_app-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D7D13A39E6F888B93675DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4F2386C28C005C6ED537C8 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE5A5D60E49B9DBAF0198EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181D03EB4F8642D6FD5D4E98 /* Pods-etsy_app-SDWebImage-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SDWebImage/Pods-etsy_app-SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SDWebImage/Pods-etsy_app-SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01DCB981FF0CFA5AB3A40C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4F2386C28C005C6ED537C8 /* Pods-etsy_app-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-SwiftyJSON/Pods-etsy_app-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9F535AABBC3E60D9A315ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC362E2A947F222E8BB28DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D366130FCD8C50D3402D749 /* Pods-etsy_app.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app/Pods-etsy_app.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_etsy_app;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F94CEB084327C8FFED3243C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D186211794925FA45B0AAE /* Pods-etsy_app-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-etsy_app-Alamofire/Pods-etsy_app-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0710E958C3A0B54B109B6FBB /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */ = {
+		0AD71EA1090C5EB4A92CC2E8 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SDWebImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB802A876C646646DEBF9E4E /* Debug */,
-				19429A424E9A4B01E86461E6 /* Release */,
+				AE5A5D60E49B9DBAF0198EFE /* Debug */,
+				4FDFC9ACC0385281E4BD694D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42A1F76D40778110A20383EE /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */ = {
+		29E63B1731644FA99D183DED /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				240AD0F3A976C129736BBDD6 /* Debug */,
-				740DD6F9E89CFD8BA0DB11E3 /* Release */,
+				2013B017EEC1E901A6C980CE /* Debug */,
+				C9F535AABBC3E60D9A315ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D5E137C129321C7F027126 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */ = {
+		32FE32B468F0F8FFA8AF17FF /* Build configuration list for PBXNativeTarget "Pods-etsy_app-SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				003629AC2F2E1423E9C6F9D1 /* Debug */,
-				5DB7B4C5657E7A53A6D99E88 /* Release */,
+				8D7D13A39E6F888B93675DA4 /* Debug */,
+				B01DCB981FF0CFA5AB3A40C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEC56AFE58E55CBB90BEE8CE /* Build configuration list for PBXProject "Pods" */ = {
+		83B76F0661EC533273BD9B8E /* Build configuration list for PBXNativeTarget "Pods-etsy_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7F20FC1317C4FA4C5C7171F /* Debug */,
-				BC7F6A689DB94CE31620A6BD /* Release */,
+				499AB0AA59852932924CA477 /* Debug */,
+				CC362E2A947F222E8BB28DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D97E3A39235ECB2E78588904 /* Build configuration list for PBXNativeTarget "Pods-etsy_app-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F94CEB084327C8FFED3243C4 /* Debug */,
+				8B8D322773B29FFFF93FDAA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 61EB0F70F6907D6EF95C336F /* Project object */;
+	rootObject = B6C4FAD39D3961D78A98F34A /* Project object */;
 }

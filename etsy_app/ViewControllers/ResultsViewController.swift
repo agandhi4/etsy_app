@@ -16,6 +16,17 @@ class ResultsViewController: UITableViewController {
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120;
+        
+        startSearch()
+    }
+    
+    func startSearch() {
+        EtsyService.search(searchModel, onSuccess: setModel)
+    }
+    
+    func setModel(newModel: SearchModel) {
+        searchModel = newModel
+        tableView.reloadData()
     }
     
     /*
@@ -40,6 +51,7 @@ extension ResultsViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as ListCell
+        cell.listing = searchModel.results[indexPath.row]
         return cell
     }
 }
