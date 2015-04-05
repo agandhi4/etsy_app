@@ -9,10 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    var listing: Listing!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        // call EtsyService for more detials
     }
 }

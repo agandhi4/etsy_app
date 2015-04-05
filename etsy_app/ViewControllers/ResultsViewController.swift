@@ -20,13 +20,12 @@ class ResultsViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100;
         
-        // Cheap and easy way to get spinner
-        tableView.tableFooterView = footerView
+        showSpinner()
         startSearch()
     }
     
     func startSearch() {
-        etsyService.search(searchModel, onSuccess: setModel)
+        etsyService.search(searchModel, onSuccess: setModel, onFailure: showError)
     }
     
     func setModel(newModel: SearchModel) {
@@ -40,15 +39,31 @@ class ResultsViewController: UITableViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showError(error: NSError) {
+        var alert = UIAlertController(title: "Network Error", message: "Error contacting Etsy, please try again later.", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        hideSpinner()
     }
-    */
+    
+    func showSpinner() {
+        // Cheap and easy way to get spinner
+        tableView.tableFooterView = footerView
+    }
+    
+    func hideSpinner() {
+        tableView.tableFooterView = UIView()
+    }
+
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var row = self.tableView.indexPathForSelectedRow()!.row
+        var listing = searchModel.results[row]
+        
+        var destination = segue.destinationViewController as DetailViewController
+        destination.listing = listing
+    }
+
 }
 
 // Segregate the tableview datasource and delegate methods visually
@@ -69,8 +84,8 @@ extension ResultsViewController {
                 searchModel.page++
                 startSearch()
             } else {
-                // If there are no more results, "remove" the spinner
-                self.tableView.tableFooterView = UIView()
+                // If there are no more results, remove the spinner
+                hideSpinner()
             }
         }
         

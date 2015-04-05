@@ -20,11 +20,15 @@ class EtsyService: NSObject {
         api_key = File(file: "api_key").read()
     }
     
-    func search(searchModel: SearchModel, onSuccess: (newModel: SearchModel) -> Void) {
+    func search(searchModel: SearchModel, onSuccess: (newModel: SearchModel) -> Void,
+                                          onFailure: (error: NSError) -> Void) {
         var url = createSearchURL(searchModel)
-        
         Alamofire.request(.GET, url).responseJSON { (request, response, json, error) in
-            onSuccess(newModel: self.serializeResponse(JSON(json!)))
+            if (error == nil) {
+                onSuccess(newModel: self.serializeResponse(JSON(json!)))
+            } else {
+                onFailure(error: error!)
+            }
         }
     }
     
@@ -35,6 +39,7 @@ class EtsyService: NSObject {
         
         for(key: String, subJSON: JSON) in json["results"] {
             var newListing = Listing()
+            newListing.id = subJSON["listing_id"].intValue
             newListing.title = subJSON["title"].stringValue
             newListing.imageURL = subJSON["MainImage"]["url_75x75"].stringValue
             results.append(newListing)

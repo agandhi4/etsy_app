@@ -9,6 +9,7 @@
 import UIKit
 
 class Listing: NSObject {
+    var id: Int!
     var imageURL: String!
     var title: String!
 }
