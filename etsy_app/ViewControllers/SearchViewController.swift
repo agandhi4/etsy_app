@@ -10,6 +10,13 @@ import UIKit
 
 class SearchViewController: UIViewController {
     @IBOutlet weak var searchField: UITextField!
+    
+    // Every time we show the view, lets put the focus on the search field
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        searchField.becomeFirstResponder()
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Create a search model with the user inputted keywords
         var searchModel = SearchModel()

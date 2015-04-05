@@ -10,6 +10,8 @@ import UIKit
 
 class ResultsViewController: UITableViewController {
     var searchModel: SearchModel!
+    var etsyService = EtsyService()
+    
     @IBOutlet weak var footerView: UIView!
     
     override func viewDidLoad() {
@@ -24,13 +26,15 @@ class ResultsViewController: UITableViewController {
     }
     
     func startSearch() {
-        EtsyService.search(searchModel, onSuccess: setModel)
+        etsyService.search(searchModel, onSuccess: setModel)
     }
     
     func setModel(newModel: SearchModel) {
         searchModel.results += newModel.results
         searchModel.numResults = newModel.numResults
-
+        
+        // We need to refresh the table in the main thread, since this will be called from 
+        // a worker thread created by the network response
         dispatch_async(dispatch_get_main_queue()) {
             self.tableView.reloadData()
         }
@@ -47,6 +51,7 @@ class ResultsViewController: UITableViewController {
     */
 }
 
+// Segregate the tableview datasource and delegate methods visually
 extension ResultsViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return searchModel.results.count > 0 ? 1 : 0
@@ -57,11 +62,14 @@ extension ResultsViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // If we have reached the last row, we may need to lazy load more results
         if ((indexPath.row + 1) == searchModel.results.count) {
             if (searchModel.hasMore()) {
                 searchModel.page++
                 startSearch()
             } else {
+                // If there are no more results, "remove" the spinner
                 self.tableView.tableFooterView = UIView()
             }
         }

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="WSO-fN-WMD">
             <objects>
                 <viewController id="TO8-dh-CW9" customClass="SearchViewController" customModule="etsy_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <constraint firstAttribute="centerX" secondItem="D3e-yg-g79" secondAttribute="centerX" constant="30" id="yWw-Nb-X1d"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="X1p-8R-bAy"/>
+                    <navigationItem key="navigationItem" title="Search" id="X1p-8R-bAy"/>
                     <connections>
                         <outlet property="searchField" destination="D3e-yg-g79" id="ztc-2k-nY6"/>
                     </connections>
@@ -75,11 +75,11 @@
             </objects>
             <point key="canvasLocation" x="-1194" y="415"/>
         </scene>
-        <!--Results View Controller-->
+        <!--Results-->
         <scene sceneID="GPs-CC-TTj">
             <objects>
-                <tableViewController id="LCY-ia-nhP" customClass="ResultsViewController" customModule="etsy_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="5Nu-fV-LTm">
+                <tableViewController title="Results" id="LCY-ia-nhP" customClass="ResultsViewController" customModule="etsy_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="22" sectionFooterHeight="22" id="5Nu-fV-LTm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,28 +100,30 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="95" id="7Cc-74-oCq" customClass="ListCell" customModule="etsy_app" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="96" id="7Cc-74-oCq" customClass="ListCell" customModule="etsy_app" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Cc-74-oCq" id="AXM-Ca-EII">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-G4-6J4">
-                                            <rect key="frame" x="10" y="10" width="75" height="74"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="75x75" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-G4-6J4">
+                                            <rect key="frame" x="10" y="10" width="75" height="75"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="75" id="eJ5-0c-DIF"/>
+                                                <constraint firstAttribute="height" constant="75" id="agO-NM-t5U"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
-                                            <rect key="frame" x="105" y="40" width="485" height="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
+                                            <rect key="frame" x="105" y="10" width="485" height="75"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Sm3-G4-6J4" firstAttribute="centerY" secondItem="a4r-we-UOj" secondAttribute="centerY" id="5m3-ri-WyS"/>
                                         <constraint firstItem="Sm3-G4-6J4" firstAttribute="leading" secondItem="AXM-Ca-EII" secondAttribute="leading" constant="10" id="Gvn-fi-kjl"/>
                                         <constraint firstItem="a4r-we-UOj" firstAttribute="leading" secondItem="Sm3-G4-6J4" secondAttribute="trailing" constant="20" id="RaL-oW-Acu"/>
-                                        <constraint firstAttribute="centerY" secondItem="a4r-we-UOj" secondAttribute="centerY" id="Zd7-Ru-yVr"/>
+                                        <constraint firstItem="a4r-we-UOj" firstAttribute="top" secondItem="AXM-Ca-EII" secondAttribute="top" constant="10" id="Sbp-mN-Ws5"/>
+                                        <constraint firstAttribute="bottom" secondItem="a4r-we-UOj" secondAttribute="bottom" constant="10" id="YEq-0e-GRE"/>
                                         <constraint firstAttribute="trailing" secondItem="a4r-we-UOj" secondAttribute="trailing" constant="10" id="boF-0P-HVz"/>
                                         <constraint firstItem="Sm3-G4-6J4" firstAttribute="top" secondItem="AXM-Ca-EII" secondAttribute="top" constant="10" id="lxh-SB-0tZ"/>
                                         <constraint firstAttribute="bottom" secondItem="Sm3-G4-6J4" secondAttribute="bottom" constant="10" id="wKA-9C-rrY"/>
@@ -147,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="329" y="414"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Details-->
         <scene sceneID="R54-qr-Vm5">
             <objects>
-                <viewController id="JMr-wO-Y0p" customClass="DetailViewController" customModule="etsy_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Details" id="JMr-wO-Y0p" customClass="DetailViewController" customModule="etsy_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HM3-JV-Djm"/>
                         <viewControllerLayoutGuide type="bottom" id="c3C-Iy-jqX"/>
@@ -166,4 +168,7 @@
             <point key="canvasLocation" x="1126" y="415"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="75x75" width="75" height="75"/>
+    </resources>
 </document>

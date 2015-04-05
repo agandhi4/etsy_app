@@ -11,26 +11,45 @@ import Alamofire
 import SwiftyJSON
 
 class EtsyService: NSObject {
-    class func search(searchModel: SearchModel, onSuccess: (newModel: SearchModel) -> Void) {
-        var api_key = "liwecjs0c3ssk6let4p1wqt9"
-        var url = "https://api.etsy.com/v2/listings/active?api_key=\(api_key)&includes=MainImage&keywords=\(searchModel.keyword)&page=\(searchModel.page)"
+    var api_key: String!
+    
+    override init() {
+        super.init()
+        
+        // So we don't have the api key in the code or in source control
+        api_key = File(file: "api_key").read()
+    }
+    
+    func search(searchModel: SearchModel, onSuccess: (newModel: SearchModel) -> Void) {
+        var url = createSearchURL(searchModel)
         
         Alamofire.request(.GET, url).responseJSON { (request, response, json, error) in
-            var newModel = SearchModel()
-            let resp = JSON(json!)
-            var results: [Listing] = []
-            
-            for(key: String, subJSON: JSON) in resp["results"] {
-                var newListing = Listing()
-                newListing.title = subJSON["title"].stringValue
-                newListing.imageURL = subJSON["MainImage"]["url_75x75"].stringValue
-                results.append(newListing)
-            }
-
-            newModel.numResults = resp["count"].intValue
-            newModel.results = results
-            
-            onSuccess(newModel: newModel)
+            onSuccess(newModel: self.serializeResponse(JSON(json!)))
         }
+    }
+    
+    // Contain the handling of the service response to one method
+    func serializeResponse(json: JSON) -> SearchModel {
+        var newModel = SearchModel()
+        var results: [Listing] = []
+        
+        for(key: String, subJSON: JSON) in json["results"] {
+            var newListing = Listing()
+            newListing.title = subJSON["title"].stringValue
+            newListing.imageURL = subJSON["MainImage"]["url_75x75"].stringValue
+            results.append(newListing)
+        }
+        
+        newModel.numResults = json["count"].intValue
+        newModel.results = results
+        
+        return newModel
+    }
+    
+    func createSearchURL(searchModel: SearchModel) -> String {
+        var escapedKeywords = searchModel.keyword.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+        
+        return "https://api.etsy.com/v2/listings/active?api_key=\(api_key)&includes=MainImage&keywords=\(escapedKeywords)&page=\(searchModel.page)"
+        
     }
 }
