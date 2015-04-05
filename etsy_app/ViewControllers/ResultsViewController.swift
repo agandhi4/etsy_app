@@ -10,13 +10,16 @@ import UIKit
 
 class ResultsViewController: UITableViewController {
     var searchModel: SearchModel!
-
+    @IBOutlet weak var footerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 120;
+        tableView.estimatedRowHeight = 100;
         
+        // Cheap and easy way to get spinner
+        tableView.tableFooterView = footerView
         startSearch()
     }
     
@@ -25,8 +28,12 @@ class ResultsViewController: UITableViewController {
     }
     
     func setModel(newModel: SearchModel) {
-        searchModel = newModel
-        tableView.reloadData()
+        searchModel.results += newModel.results
+        searchModel.numResults = newModel.numResults
+
+        dispatch_async(dispatch_get_main_queue()) {
+            self.tableView.reloadData()
+        }
     }
     
     /*
@@ -42,14 +49,23 @@ class ResultsViewController: UITableViewController {
 
 extension ResultsViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return searchModel.results.count > 0 ? 1 : 0
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchModel.numResults
+        return searchModel.results.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if ((indexPath.row + 1) == searchModel.results.count) {
+            if (searchModel.hasMore()) {
+                searchModel.page++
+                startSearch()
+            } else {
+                self.tableView.tableFooterView = UIView()
+            }
+        }
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("ListCell") as ListCell
         cell.listing = searchModel.results[indexPath.row]
         return cell

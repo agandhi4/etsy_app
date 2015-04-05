@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Oln-cX-cfR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Search View Controller-->
@@ -84,31 +83,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="2ix-6b-xLl">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IAU-es-wk8">
+                                    <rect key="frame" x="290" y="12" width="20" height="20"/>
+                                </activityIndicatorView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="IAU-es-wk8" secondAttribute="bottom" constant="12" id="Ksc-22-JLO"/>
+                                <constraint firstAttribute="centerY" secondItem="IAU-es-wk8" secondAttribute="centerY" id="PW4-al-bcf"/>
+                                <constraint firstItem="IAU-es-wk8" firstAttribute="top" secondItem="2ix-6b-xLl" secondAttribute="top" constant="12" id="asU-Dl-dOt"/>
+                                <constraint firstAttribute="centerX" secondItem="IAU-es-wk8" secondAttribute="centerX" id="oab-0v-AC8"/>
+                            </constraints>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="100" id="7Cc-74-oCq" customClass="ListCell" customModule="etsy_app" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="95" id="7Cc-74-oCq" customClass="ListCell" customModule="etsy_app" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Cc-74-oCq" id="AXM-Ca-EII">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sm3-G4-6J4">
-                                            <rect key="frame" x="13" y="11" width="75" height="75"/>
+                                            <rect key="frame" x="10" y="10" width="75" height="74"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="75" id="W4K-sZ-IxA"/>
                                                 <constraint firstAttribute="width" constant="75" id="eJ5-0c-DIF"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
-                                            <rect key="frame" x="108" y="39" width="33" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-we-UOj">
+                                            <rect key="frame" x="105" y="40" width="485" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="a4r-we-UOj" secondAttribute="centerY" id="5Ro-Dg-3ac"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Sm3-G4-6J4" secondAttribute="bottom" constant="5" id="6Ey-60-Fqg"/>
-                                        <constraint firstItem="Sm3-G4-6J4" firstAttribute="leading" secondItem="AXM-Ca-EII" secondAttribute="leadingMargin" constant="5" id="Q1M-Lz-4BB"/>
-                                        <constraint firstItem="a4r-we-UOj" firstAttribute="leading" secondItem="Sm3-G4-6J4" secondAttribute="trailing" constant="20" id="TTP-8i-5Dk"/>
+                                        <constraint firstItem="Sm3-G4-6J4" firstAttribute="leading" secondItem="AXM-Ca-EII" secondAttribute="leading" constant="10" id="Gvn-fi-kjl"/>
+                                        <constraint firstItem="a4r-we-UOj" firstAttribute="leading" secondItem="Sm3-G4-6J4" secondAttribute="trailing" constant="20" id="RaL-oW-Acu"/>
+                                        <constraint firstAttribute="centerY" secondItem="a4r-we-UOj" secondAttribute="centerY" id="Zd7-Ru-yVr"/>
+                                        <constraint firstAttribute="trailing" secondItem="a4r-we-UOj" secondAttribute="trailing" constant="10" id="boF-0P-HVz"/>
+                                        <constraint firstItem="Sm3-G4-6J4" firstAttribute="top" secondItem="AXM-Ca-EII" secondAttribute="top" constant="10" id="lxh-SB-0tZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Sm3-G4-6J4" secondAttribute="bottom" constant="10" id="wKA-9C-rrY"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -123,6 +139,9 @@
                             <outlet property="delegate" destination="LCY-ia-nhP" id="E21-sE-kdj"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="footerView" destination="2ix-6b-xLl" id="ddp-Qn-Jbu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFG-2Y-dsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

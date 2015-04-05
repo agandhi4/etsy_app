@@ -14,7 +14,8 @@ class ListCell: UITableViewCell {
     
     var listing: Listing! {
         didSet {
-            self.listImage.sd_setImageWithURL(NSURL(string: listing.imageURL))
+//            self.listImage.sd_setImageWithURL(NSURL(string: listing.imageURL))
+            self.listImage.sd_setImageWithURL(NSURL(string: listing.imageURL), placeholderImage: UIImage(named: "75x75.png"))
             self.title.text = listing.title
         }
     }

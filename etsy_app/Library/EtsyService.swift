@@ -13,7 +13,7 @@ import SwiftyJSON
 class EtsyService: NSObject {
     class func search(searchModel: SearchModel, onSuccess: (newModel: SearchModel) -> Void) {
         var api_key = "liwecjs0c3ssk6let4p1wqt9"
-        var url = "https://api.etsy.com/v2/listings/active?api_key=\(api_key)&includes=MainImage&keywords=\(searchModel.keyword)"
+        var url = "https://api.etsy.com/v2/listings/active?api_key=\(api_key)&includes=MainImage&keywords=\(searchModel.keyword)&page=\(searchModel.page)"
         
         Alamofire.request(.GET, url).responseJSON { (request, response, json, error) in
             var newModel = SearchModel()
@@ -26,8 +26,8 @@ class EtsyService: NSObject {
                 newListing.imageURL = subJSON["MainImage"]["url_75x75"].stringValue
                 results.append(newListing)
             }
-            
-            newModel.numResults = resp["pagination"]["effective_limit"].intValue
+
+            newModel.numResults = resp["count"].intValue
             newModel.results = results
             
             onSuccess(newModel: newModel)

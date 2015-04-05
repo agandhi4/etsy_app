@@ -9,18 +9,22 @@
 import UIKit
 
 class SearchModel: NSObject {
-    var keyword: String!
+    // Conditions for the search
+    var keyword = ""
     
-    var results: [Listing]!
-    var numResults: Int!
+    // Results
+    var results: [Listing] = []
     
-    override init() {
-        super.init()
-        
-        // Set default values
-        keyword = ""
-        
-        results = []
-        numResults = 0
+    // Control of pagination
+    var page = 1
+    var perPage = 25
+    var numResults = 0
+    
+    func hasMore() -> Bool {
+        if ((page * perPage) < numResults) {
+            return true
+        } else {
+            return false
+        }
     }
 }
